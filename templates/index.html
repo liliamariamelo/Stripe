@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+
+{% extends "base.html" %}
+
+
+{% block content %}
+  <style> 
+    #imagem-card{
+      width: 50%;
+      height: auto;
+    }
+    .section{
+      width: 300px; 
+    }
+    
+  </style>
+  <section class="section">
+    <div class="container">
+      <img id="imagem-card" src="https://img.freepik.com/fotos-premium/brigadeiro-brasileiro-tradicional-isolado-na-superficie-branca_70216-349.jpg">
+      <h2>Brigadeiro Tradicional</h2>
+      <h3 id="texto">R$0,20</h3>
+      <button class="button is-primary" id="submitBtn">Comprar!</button>
+    </div>
+  </section>
+{% endblock %}
